@@ -3,10 +3,16 @@ Android 代码模块
 
 第一步
 复制lteditspinner组件到根目录
+
+
 第二步
 xxx/build.gradle里加入     api project(':lteditspinner')
+
+
 第三步
 settings.gradle 里加入 “, ':lteditspinner'”
+
+
 第四步
 代码调用test
   java
