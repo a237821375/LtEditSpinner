@@ -13,7 +13,7 @@
   Step 2. Add the dependency
 
     dependencies {
-            implementation 'com.github.a237821375:LtEditSpinner:v1.0'
+            implementation 'com.github.a237821375:LtEditSpinner:v1.1'
     }
 
 ※源码组件导入
