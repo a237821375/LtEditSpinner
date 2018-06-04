@@ -61,3 +61,37 @@ settings.gradle 里加入 “, ':lteditspinner'”
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="114dp"></cn.lognteng.editspinner.lteditspinner.LTEditSpinner>
+
+自定义数据源
+public class DataTest
+{
+    int id;
+    String name;
+
+    public DataTest(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() //非常重要，用于显示spinner里的内容
+    {
+        return name;
+    }
+}
