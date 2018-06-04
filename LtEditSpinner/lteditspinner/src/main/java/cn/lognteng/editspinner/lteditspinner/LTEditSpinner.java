@@ -100,7 +100,7 @@ public class LTEditSpinner<T> extends RelativeLayout
         initView(context);
     }
 
-    public void initView(Context context)
+    private void initView(Context context)
     {
         mContext = context;
 
@@ -203,6 +203,12 @@ public class LTEditSpinner<T> extends RelativeLayout
         return this;
     }
 
+    public LTEditSpinner setImageBttonBackground(int resid)
+    {
+        ltes_imagebutton_open_spinner.setBackgroundResource(resid);
+        return this;
+    }
+
     public LTEditSpinner setEditHint(String str)
     {
         ltes_editText.setHint(str);
@@ -255,28 +261,26 @@ public class LTEditSpinner<T> extends RelativeLayout
         return popupWindow;
     }
 
-    public void showTop()
+    private void showTop()
     {
         int[] location = new int[2];
         ltes_editText.getLocationOnScreen(location);
         mPopupWindow.showAtLocation(ltes_editText, Gravity.NO_GRAVITY, location[0], location[1]-mPopupWindow.getHeight());
     }
 
-    public void showDown()
+    private void showDown()
     {
-        int[] location = new int[2];
-        ltes_editText.getLocationOnScreen(location);
         mPopupWindow.showAsDropDown(ltes_editText);
     }
 
-    public void showLeft()
+    private void showLeft()
     {
         int[] location = new int[2];
         ltes_editText.getLocationOnScreen(location);
         mPopupWindow.showAtLocation(ltes_editText, Gravity.NO_GRAVITY, location[0] - mPopupWindow.getWidth(), location[1]);
     }
 
-    public void showRight()
+    private void showRight()
     {
         int[] location = new int[2];
         ltes_editText.getLocationOnScreen(location);

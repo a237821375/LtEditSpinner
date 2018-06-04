@@ -11,7 +11,7 @@ allprojects {
 Step 2. Add the dependency
 
 dependencies {
-        implementation 'com.github.a237821375:LtEditSpinner:v1.1'
+        implementation 'com.github.a237821375:LtEditSpinner:v1.0'
 }
 ※源码组件导入 Android 代码模块 组件化实现
 
